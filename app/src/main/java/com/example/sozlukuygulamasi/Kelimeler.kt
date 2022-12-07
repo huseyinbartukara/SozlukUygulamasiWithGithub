@@ -1,7 +1,8 @@
 package com.example.sozlukuygulamasi
 
+import com.google.firebase.database.IgnoreExtraProperties
 import java.io.Serializable
-
-data class Kelimeler (var kelime_id:Int, var ingilizce:String, var turkce:String) : Serializable {
+@IgnoreExtraProperties
+data class Kelimeler (var kelime_id:String? = "", var ingilizce:String? = "", var turkce:String? = "") : Serializable {
 
 }
